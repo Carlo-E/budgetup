@@ -1,0 +1,15 @@
+.Transactions {
+  margin: 50px;
+}
+
+.Transactions a {
+  color: rgb(73, 146, 63);
+}
+
+.Transactions a:hover {
+  color: greenyellow;
+}
+
+h1 {
+  text-align: center;
+}
