@@ -4,7 +4,6 @@ import * as ReactBootStrap from "react-bootstrap";
 
 const NavBar = () => {
   return (
-    <nav>
       <ReactBootStrap.Navbar
         collapseOnSelect
         expand="xl"
@@ -22,7 +21,6 @@ const NavBar = () => {
           </ReactBootStrap.Nav>
         </ReactBootStrap.Navbar.Collapse>
       </ReactBootStrap.Navbar>
-    </nav>
   );
 };
 

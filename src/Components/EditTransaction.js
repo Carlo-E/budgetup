@@ -83,11 +83,15 @@ const EditTransaction = ({ updateTransaction }) => {
           placeholder="Amount"
         />
         </Form.Group>
-        <Button className="Button" variant="outline-success" type="submit">Submit</Button>
+        <Button className="Button" variant="outline-success" type="submit">
+          Submit
+        </Button>
+      </form>
+      <div>
       <Link to={`/transactions/${index}`}>
         <Button className="Button" variant="outline-success">Back</Button>
       </Link>
-      </form>
+      </div>
       <br/>
     </div>
   );
