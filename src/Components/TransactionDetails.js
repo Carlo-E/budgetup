@@ -29,6 +29,8 @@ const TransactionDetails = ({ deleteTransaction }) => {
     history.push(`/transactions`);
   };
 
+  let options = { month: "short", day: "numeric" }
+
   return (
     <div>
       <Table striped bordered hover responsive variant="success">
@@ -42,7 +44,7 @@ const TransactionDetails = ({ deleteTransaction }) => {
         </thead>
         <tbody>
           <tr>
-            <td>{transaction.date}</td>
+            <td>{new Date(transaction.date).toLocaleDateString(undefined, options).replace(/-/, "/")}</td>
             <td>{transaction.name}</td>
             <td>{transaction.from}</td>
             <td>{transaction.amount}</td>

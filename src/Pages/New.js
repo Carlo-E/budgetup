@@ -13,16 +13,17 @@ const New = ({ addTransaction, amounts }) => {
   });
   const history = useHistory();
 
+  
   const handleChange = (event) => {
     setTrasanction({ ...transaction, [event.target.id]: event.target.value });
   };
-
+  
   const handleSubmit = (event) => {
     event.preventDefault();
     addTransaction(transaction);
     history.push("/transactions");
   };
-
+  
   return (
     <div className="New">
       <h1>New Transaction</h1>
@@ -32,7 +33,7 @@ const New = ({ addTransaction, amounts }) => {
           <Form.Control
             id="date"
             value={transaction.date}
-            type="text"
+            type="date"
             onChange={handleChange}
             placeholder="Enter Date"
           />
